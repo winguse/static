@@ -1,0 +1,10 @@
+#!/bin/sh
+
+version=v0.0.1
+
+curl https://github.com/winguse/another-dns/releases/download/$version/another-dns-darwin-amd64-$version.gz -L | gzip -d - > /usr/local/bin/another-dns
+chmod +x /usr/local/bin/another-dns
+
+echo ip-up ip-down cn-cidrs.txt | xargs -n 1 -I {} curl https://wingu.se/static/macos-vpn-scripts/{} -o /etc/ppp/{}
+
+chmod +x /etc/ppp/ip-*
