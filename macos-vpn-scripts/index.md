@@ -3,33 +3,18 @@
 Automatically split domestic (China Mainland) and international traffic:
 
 1. Use the domestic DNS result from domestic DNS server and vice versa.
-2. Use an optimized route table, to make sure domestic IPs are using local gateway, and United States IPs are going VPN.
+2. A dropdown menu to select different policies.
 
 ## Install
 
 ```sh
-curl https://wingu.se/static/macos-vpn-scripts/install | sudo bash
+sudo sh -c "curl https://wingu.se/static/macos-vpn-scripts/install | sh"
 ```
 
-And you can use the VPN normally.
-
-### Disable temporary
-
-Disable:
-
-```sh
-sudo touch /etc/ppp/ip-script-disabled
-```
-
-Re-enable:
-
-```
-sudo rm /etc/ppp/ip-script-disabled
-```
+And you can see a 🚥 menu in your system tray when you connect to VPN.
 
 ## Uninstall
 
 ```sh
-sudo rm /etc/ppp/ip-up /etc/ppp/ip-down /etc/ppp/cn-cidrs.txt /usr/local/bin/another-dns
+sudo rm /etc/ppp/ip-up /etc/ppp/ip-down /etc/ppp/cn-cidrs.txt /etc/ppp/another-dns /etc/ppp/static-dns-policy.txt /etc/ppp/another-dns.log /etc/ppp/dns-policy.txt
 ```
-
