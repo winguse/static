@@ -1,5 +1,7 @@
 # 直连列表
 
+KEYWORD	F	zoom
+
 # other
 SUFFIX	F	ip6-localhost
 SUFFIX	F	ip6-loopback
@@ -800,14 +802,14 @@ SUFFIX	F	zhuihd.com
 # 代理列表
 
 # 国外域名
-SUFFIX	T	eu
-SUFFIX	T	hk
-SUFFIX	T	jp
-SUFFIX	T	kr
-SUFFIX	T	sg
-SUFFIX	T	tw
-SUFFIX	T	uk
-SUFFIX	T	us
+# SUFFIX	T	eu
+# SUFFIX	T	hk
+# SUFFIX	T	jp
+# SUFFIX	T	kr
+# SUFFIX	T	sg
+# SUFFIX	T	tw
+# SUFFIX	T	uk
+# SUFFIX	T	us
 
 # 国外域名关键字
 KEYWORD	T	1e100
