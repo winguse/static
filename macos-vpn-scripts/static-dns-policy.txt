@@ -1,3 +1,7 @@
+# OCSP 会泄露访问意图，所以一律走 VPN
+# 例如：ocsp.apple.com , ocsp.g.aaplimg.com
+KEYWORD	T	ocsp
+
 # 直连列表
 
 KEYWORD	F	zoom
