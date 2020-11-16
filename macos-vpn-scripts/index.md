@@ -1,5 +1,7 @@
 # MacOS VPN Script
 
+Note: This script will not work with the VPN install by mobileconfig profile, so you need to create the VPN connection manually. And for the name of the VPN, please do not contain spaces or other special characters (say `(`).
+
 Automatically split domestic (China Mainland) and international traffic:
 
 1. Use the domestic DNS result from domestic DNS server and vice versa.
