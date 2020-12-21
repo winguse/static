@@ -36,6 +36,7 @@ const domains = new Set(`
 tubi.tv
 tubi.io
 tubitv.com
+clubhouse.io
 eu
 hk
 jp
