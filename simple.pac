@@ -37,6 +37,12 @@ tubi.tv
 tubi.io
 tubitv.com
 clubhouse.io
+okta.com
+databricks.com
+periscopedata.com
+datadoghq.com
+atlassian.net
+
 eu
 hk
 jp
