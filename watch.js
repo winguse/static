@@ -26,13 +26,15 @@ var startOpts = { userID: "" };
 } else {
   var s=document.createElement('script');s.src="https://unpkg.com/highlight.run";s.async=true;
   document.getElementsByTagName('head')[0].appendChild(s);
-  H.init('neyw71xg', {
-    environment: 'production',
-    version: 'commit:v0',
-    networkRecording: {
-      enabled: true,
-      recordHeadersAndBody: true,
-      urlBlocklist: [],
-    },
-  });
+  s.onload = function() {
+    H.init('neyw71xg', {
+      environment: 'production',
+      version: 'commit:v0',
+      networkRecording: {
+        enabled: true,
+        recordHeadersAndBody: true,
+        urlBlocklist: [],
+      },
+    });
+  }
 }
