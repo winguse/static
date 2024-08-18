@@ -1,0 +1,8 @@
+<script>
+function setCookie(name, value, days) {
+  const expires = new Date();
+  expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000)); // Set expiration time
+  document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
+}
+setCookie('donottrack', '1', 3650);
+</script>
