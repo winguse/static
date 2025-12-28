@@ -15,7 +15,7 @@ function setCookie(name, value, days) {
   document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/`;
 }
 
-if (getCookie('donottrack')) {
+if (getCookie('donottrack') || true) {
   console.log('not tracking');
 } else {
   if (Math.random() < 2 / 3) {
